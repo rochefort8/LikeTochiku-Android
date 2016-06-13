@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">いいね!東筑</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_news">NewsActivity</string>
+    <string name="title_activity_big_news">BigNewsActivity</string>
+    <string name="title_activity_umanatsu">UmanatsuActivity</string>
+    <string name="title_activity_umanatsu_slide">MainActivity</string>
+    <string name="umanatsu1">東日本大震災の被災地で暮らす女性たちと手仕事をしながら小さなウェブショップを運営しています！</string>
+    <string name="umanatsu2">自分のパンでお客様を笑顔にできることに、喜びを感じています！</string>
+    <string name="umanatsu3">91期恵良くんの会社</string>
+    <string name="umanatsu4">舞踏家・87期木室くん</string>
+    <string name="title_activity_memories">MemoriesActivity</string>
+    <string name="title_activity_memories_slider">MemoriesSliderActivity</string>
+    <string name="title_activity_quiz_main">QuizMainActivity</string>
+    <string name="title_activity_quiz_question">QuizQuestionActivity</string>
+    <string name="title_activity_quiz_result">QuizResultActivity</string>
+    <string name="title_activity_quiz_question2">QuizQuestion2Activity</string>
+    <string name="title_activity_news1">News1Activity</string>
+    <string name="title_activity_umanatsu_webview">UmanatsuWebviewActivity</string>
+    <string name="title_activity_tochikuji">TochikujiActivity</string>
+    <string name="title_activity_tochikuji_slide">TochikujiSlideActivity</string>
+    <string name="title_activity_tochikuji_result">TochikujiResultActivity</string>
+    <string name="title_activity_tochikuji_file_view">TochikujiFileViewActivity</string>
+    <string name="title_activity_photo_relay">PhotoRelayActivity</string>
+    <string name="title_activity_capture">CaptureActivity</string>
+    <string name="title_activity_photos">PhotosActivity</string>
+    <string name="title_activity_function_list">FunctionListActivity</string>
+    <string name="title_activity_login">LoginActivity</string>
+    <string name="login_logo_content_description">Logo</string>
+    <string name="login_title_logged_in">Your are logged in as</string>
+    <string name="login_logout_button_label">Log out</string>
+    <string name="login_title_logged_out">You must be logged in to view your profile</string>
+    <string name="login_login_button_label">Log in</string>
+    <string name="title_activity_news_detail">NewsDetailActivity</string>
+    <string name="title_activity_main2">Main2Activity</string>
+    <string name="title_activity_reunion_registration2">ReunionRegistrationActivity</string>
+    <string name="title_activity_home_message">HomeMessageActivity</string>
+    <string name="title_activity_do_login">DoLoginActivity</string>
+    <string name="title_activity_login_password">LoginPasswordActivity</string>
+    <string name="title_activity_user_registration">UserRegistrationActivity</string>
+    <string name="title_graduates_spinner">期</string>
+    <string name="title_activity_login_request_password">LoginRequestPasswordActivity</string>
+    <string name="title_activity_web_view">WebViewActivity</string>
+    <string name="title_activity_sales">SalesActivityActivity</string>
+    <string name="title_activity_reunion_website">ReunionWebsiteActivity</string>
+    <string name="title_activity_user_feedback">UserFeedbackActivity</string>
+    <string name="title_activity_kitakyushu">KitakyushuActivity</string>
+    <string name="title_activity_kitakyushu_website">KitakyushuWebsiteActivity</string>
+    <string name="title_activity_school_route_video_view">SchoolRouteVideoViewActivity</string>
+    <string name="title_activity_school_route">SchoolRouteActivity</string>
+
+</resources>

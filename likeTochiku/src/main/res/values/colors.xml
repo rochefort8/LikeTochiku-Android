@@ -1,0 +1,6 @@
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <color name="tochiku_image">#761623</color>
+    <color name="tochiku0_image">#ff880000</color>
+
+</resources>

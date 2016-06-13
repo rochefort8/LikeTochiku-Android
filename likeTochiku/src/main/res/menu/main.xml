@@ -1,0 +1,24 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.tochiku85.liketochiku.main.MainActivity" >
+
+    <item
+        android:id="@+id/action_home"
+        android:icon="@drawable/ic_menu_home"
+        android:orderInCategory="100"
+        android:title="ホーム"
+        app:showAsAction="ifRoom"/>
+    <item
+        android:id="@+id/action_photo_relay"
+        android:icon="@drawable/ic_menu_scketchbook"
+        android:orderInCategory="100"
+        android:title="画用紙リレー"
+        app:showAsAction="ifRoom"/>
+    <item
+        android:id="@+id/action_others"
+        android:icon="@android:drawable/ic_menu_more"
+        android:orderInCategory="100"
+        android:title="一覧"
+        app:showAsAction="ifRoom"/>
+</menu>
