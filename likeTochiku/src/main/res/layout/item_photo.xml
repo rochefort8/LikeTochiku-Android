@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <ImageView
+        android:id="@+id/imgPhoto"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:adjustViewBounds="true"
+        android:scaleType="centerCrop"
+        android:layout_alignParentLeft="true"
+		android:layout_alignParentTop="true"
+        android:src="@drawable/ic_launcher" />
+
+    <RelativeLayout
+        android:id="@+id/rlHeader"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#ffffff"
+        android:alpha="0.8"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true">
+
+        <com.mikhaellopez.circularimageview.CircularImageView
+            android:id="@+id/imgProfilePic"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:padding="5dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:src="@drawable/ic_launcher" />
+        <TextView
+            android:id="@+id/tvUsername"
+            android:layout_marginTop="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="Username text view"
+            android:textColor="#1C22D4" />
+
+        <!--  TextView
+            android:id="@+id/tvLocation"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@id/tvUsername"
+            android:layout_below="@id/tvUsername"
+            android:text="Location" / -->
+
+        <TextView
+            android:id="@+id/tvRelativeTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:paddingRight="5dp"
+            android:text="date"
+            android:textColor="#999999" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rlFooter"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@id/imgPhoto"
+        android:padding="5dp" >
+
+        <LinearLayout
+            android:id="@+id/llFooter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:paddingBottom="5dp"
+            android:paddingLeft="15dp" 
+            
+            >
+
+            <ImageView
+                android:id="@+id/imgFavorite"
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:paddingRight="5dp"
+                android:src="@drawable/ic_launcher" />
+
+            <TextView
+                android:id="@+id/tvLikesCount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingRight="5dp"
+                android:text="Like Count"
+                android:textColor="#1C22D4" />
+
+            <TextView
+                android:id="@+id/tvLikesLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="AAAA"
+                android:textColor="#1C22D4" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tvCaption"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/llFooter"
+            android:ellipsize="end"
+            android:maxLines="3"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:text="BBBB" />
+
+        <LinearLayout
+            android:id="@+id/llComments"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tvCaption"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:paddingBottom="20dp"
+            android:orientation="vertical" >
+
+        </LinearLayout>
+        
+    </RelativeLayout>
+
+</RelativeLayout>

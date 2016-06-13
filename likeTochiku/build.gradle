@@ -1,0 +1,43 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 21
+    buildToolsVersion "21.1.2"
+
+    defaultConfig {
+        applicationId "com.tochiku85.liketochiku"
+        minSdkVersion 11
+        targetSdkVersion 21
+        versionCode 11
+    }
+
+    buildTypes {
+        debug {
+            buildConfigField "String", "PARSE_API_ID", "\"${project.property("parseApiId")}\""
+            buildConfigField "String", "PARSE_API_KEY", "\"${project.property("parseApiKey")}\""
+        }
+        release {
+            buildConfigField "String", "PARSE_API_ID", "\"${project.property("parseApiId")}\""
+            buildConfigField "String", "PARSE_API_KEY", "\"${project.property("parseApiKey")}\""
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.txt'
+        }
+    }
+}
+
+dependencies {
+    compile project(':circularImageView')
+    compile project(':ParseLoginUI')
+    compile 'com.android.support:support-v4:19.1.0'
+    compile 'com.android.support:appcompat-v7:19.1.0'
+    compile files('libs/android-async-http-1.4.5.jar')
+    compile files('libs/Parse-1.9.1.jar')
+    compile files('libs/bolts-android-1.2.0.jar')
+    compile files('libs/picasso-2.3.4.jar')
+    compile files('libs/YouTubeAndroidPlayerApi.jar')
+}
+
+tasks.withType(JavaCompile) {
+    options.encoding = 'UTF-8'
+}
+

@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.tochiku85.liketochiku"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="11"
+        android:targetSdkVersion="21" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+
+    <android:uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <android:uses-permission
+        android:name="android.permission.READ_EXTERNAL_STORAGE"
+        android:maxSdkVersion="18" />
+
+    <application
+        android:name=".utils.parse.ParseApplication"
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+
+        <!--
+            android:uiOptions="splitActionBarWhenNarrow" >
+            <meta-data android:name="android.support.UI_OPTIONS"
+                android:value="splitActionBarWhenNarrow" />
+        -->
+        <activity android:name=".main.SplashActivity"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".main.MainActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".news.NewsActivity"
+            android:label="@string/title_activity_news"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".umanatsu.UmanatsuActivity"
+            android:label="@string/title_activity_umanatsu"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".umanatsu.UmanatsuSlideActivity"
+            android:label="@string/title_activity_umanatsu_slide"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".memories.MemoriesActivity"
+            android:label="@string/title_activity_memories"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".memories.MemoriesSliderActivity"
+            android:label="@string/title_activity_memories_slider"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".quiz.QuizMainActivity"
+            android:label="@string/title_activity_quiz_main"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".quiz.QuizResultActivity"
+            android:label="@string/title_activity_quiz_result"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".quiz.QuizQuestionActivity"
+            android:label="@string/title_activity_quiz_question"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".umanatsu.UmanatsuWebviewActivity"
+            android:label="@string/title_activity_umanatsu_webview"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".tochikuji.TochikujiActivity"
+            android:label="@string/title_activity_tochikuji"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".tochikuji.TochikujiResultActivity"
+            android:label="@string/title_activity_tochikuji_result"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".tochikuji.TochikujiSlideActivity"
+            android:label="TochikujiSlideActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".photorelay.PhotoRelayActivity"
+            android:label="@string/title_activity_photo_relay"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".photorelay.CaptureActivity"
+            android:label="@string/title_activity_capture"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".photorelay.PhotosActivity"
+            android:label="@string/title_activity_photos"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".main.FunctionListActivity"
+            android:label="@string/title_activity_function_list"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity
+            android:name=".settings.SettingsActivity"
+            android:label="@string/title_activity_settings"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity
+            android:name=".login.LoginActivity"
+            android:label="@string/title_activity_login"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity
+            android:name="com.parse.ui.ParseLoginActivity"
+            android:label="@string/app_name"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait">
+
+            <!-- For more options, see https://www.parse.com/docs/android_guide#ui-login -->
+            <meta-data
+                android:name="com.parse.ui.ParseLoginActivity.PARSE_LOGIN_ENABLED"
+                android:value="true" />
+            <meta-data
+                android:name="com.parse.ui.ParseLoginActivity.PARSE_LOGIN_EMAIL_AS_USERNAME"
+                android:value="true" />
+        </activity>
+        <activity
+            android:name=".news.NewsDetailActivity"
+            android:label="@string/title_activity_news_detail"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity
+            android:name=".settings.ReunionRegistrationActivity"
+            android:label="@string/title_activity_reunion_registration2"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity
+            android:name=".main.HomeMessageActivity"
+            android:label="@string/title_activity_home_message"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity
+            android:name=".login.DoLoginActivity"
+            android:label="@string/title_activity_do_login"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity
+            android:name=".login.LoginPasswordActivity"
+            android:label="@string/title_activity_login_password"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity
+            android:name=".login.UserRegistrationActivity"
+            android:label="@string/title_activity_user_registration"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity
+            android:name=".login.LoginRequestPasswordActivity"
+            android:label="@string/title_activity_login_request_password"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity
+            android:name=".main.SalesActivity"
+            android:label="@string/title_activity_sales"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity
+            android:name=".main.ReunionWebsiteActivity"
+            android:label="@string/title_activity_reunion_website"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity
+            android:name=".main.UserFeedbackActivity"
+            android:label="@string/title_activity_user_feedback"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity
+            android:name=".kitakyushu.KitakyushuActivity"
+            android:label="@string/title_activity_kitakyushu"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity
+            android:name=".kitakyushu.KitakyushuWebsiteActivity"
+            android:label="@string/title_activity_kitakyushu_website"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity
+            android:name=".schoolroute.SchoolRouteActivity"
+            android:label="@string/title_activity_school_route"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity
+            android:name=".schoolroute.SchoolRouteVideoViewActivity"
+            android:label="@string/title_activity_school_route_video_view"
+            android:screenOrientation="landscape">
+        </activity>
+
+<!--
+    For parse.com push service
+-->
+        <service android:name="com.parse.PushService" />
+        <receiver android:name="com.parse.ParseBroadcastReceiver" >
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+                <action android:name="android.intent.action.USER_PRESENT" />
+            </intent-filter>
+        </receiver>
+        <receiver android:name=".utils.parse.PushReceiver" android:exported="false">
+            <intent-filter>
+                <action android:name="com.parse.push.intent.RECEIVE" />
+                <action android:name="com.parse.push.intent.OPEN" />
+                <action android:name="com.parse.push.intent.DELETE" />
+            </intent-filter>
+        </receiver>
+    </application>
+</manifest>

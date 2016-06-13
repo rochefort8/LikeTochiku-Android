@@ -1,0 +1,13 @@
+general:
+  artifacts:
+    - "app/build/outputs/apk/app-release-unsigned.apk"
+
+test:
+  override:
+    - echo "Nothihg to do for test."
+
+deployment:
+  master:
+    branch: master
+    commands:
+      - ./gradlew assembleRelease
