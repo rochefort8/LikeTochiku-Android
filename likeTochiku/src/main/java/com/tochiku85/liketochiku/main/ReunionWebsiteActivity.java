@@ -13,7 +13,7 @@ import com.tochiku85.liketochiku.photorelay.PhotosActivity;
 public class ReunionWebsiteActivity extends ActionBarActivity {
 
     String title = "懇親会特設サイト" ;
-    String url = "http://tokyo2015.tochiku.com/" ;
+    String url = "http://tokyo2016.tochiku.com/" ;
     private WebView webView ;
 
     @Override

@@ -78,7 +78,7 @@
         android:layout_alignEnd="@+id/button_registration_submit"
         android:layout_alignRight="@+id/button_registration_submit"
         android:layout_alignTop="@+id/imageView4"
-        android:text="11月7日土曜日\nホテルニューオータニ\nお待ちしています！"
+        android:text="10月29日土曜日\nTKPガーデンシティ品川\nお待ちしています！"
         android:textSize="20dp" />
 
 </RelativeLayout>

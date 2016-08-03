@@ -35,7 +35,7 @@ import com.tochiku85.liketochiku.utils.parse.ParseApplication;
 public class FunctionListActivity extends ActionBarActivity {
     ListView list;
     String[] itemname ={
-            "SEP:2015年度東京東筑会懇親会",
+            "SEP:2016年度東京東筑会懇親会",
             "特設サイト",
             "参加申込",
             "SEP:いいね！一覧",
