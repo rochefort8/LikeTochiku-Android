@@ -1,12 +1,12 @@
 apply plugin: 'com.android.application'
 
 android {
-    compileSdkVersion 21
-    buildToolsVersion "21.1.2"
+    compileSdkVersion 24
+    buildToolsVersion "24.0.2"
 
     defaultConfig {
         applicationId "com.tochiku85.liketochiku"
-        minSdkVersion 11
+        minSdkVersion 15
         targetSdkVersion 21
         versionCode 12
     }
@@ -28,11 +28,9 @@ android {
 dependencies {
     compile project(':circularImageView')
     compile project(':ParseLoginUI')
+    compile 'com.parse:parse-android:1.13.1'
     compile 'com.android.support:support-v4:19.1.0'
     compile 'com.android.support:appcompat-v7:19.1.0'
-    compile files('libs/android-async-http-1.4.5.jar')
-    compile files('libs/Parse-1.9.1.jar')
-    compile files('libs/bolts-android-1.2.0.jar')
     compile files('libs/picasso-2.3.4.jar')
     compile files('libs/YouTubeAndroidPlayerApi.jar')
 }
