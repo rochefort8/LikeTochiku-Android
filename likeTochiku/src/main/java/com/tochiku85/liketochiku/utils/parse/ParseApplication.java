@@ -39,6 +39,14 @@ public class ParseApplication extends Application {
         ParseObject.registerSubclass(com.tochiku85.liketochiku.utils.parse.Activity.class);
         Parse.initialize(this, BuildConfig.PARSE_API_ID, BuildConfig.PARSE_API_KEY);
 
+/*
+        Parse.initialize(new Parse.Configuration.Builder(this)
+                .applicationId(BuildConfig.PARSE_API_ID)
+                .clientKey(null)
+                .server("https://liketochiku-server.herokuapp.com/parse")
+                .build()
+        );
+*/
         ParseACL defaultACL = new ParseACL();
         defaultACL.setPublicReadAccess(true);
 		ParseACL.setDefaultACL(defaultACL, true);
