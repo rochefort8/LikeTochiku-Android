@@ -124,7 +124,7 @@ public class FunctionListActivity extends ActionBarActivity {
         list.setAdapter(adapter);
         mCtx = this ;
         final android.app.ActionBar actionBar = getActionBar();
-        actionBar.setTitle("いいね！東筑");
+        getSupportActionBar().setTitle("いいね！東筑");
         parseApplication = (ParseApplication)this.getApplication() ;
 
         list.setOnItemClickListener(new AdapterView.OnItemClickListener() {

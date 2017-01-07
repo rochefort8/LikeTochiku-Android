@@ -25,6 +25,7 @@ import android.graphics.BitmapFactory;
 import android.net.Uri;
 import android.os.Bundle;
 import android.provider.MediaStore;
+import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
@@ -34,7 +35,7 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ImageView;
 
-public class CaptureActivity extends Activity {
+public class CaptureActivity extends AppCompatActivity {
 	private Uri mImageUri;
 	private int CAMERA_REQUEST = 1;
 	private ImageView imageView;
@@ -49,7 +50,7 @@ public class CaptureActivity extends Activity {
 		setContentView(R.layout.activity_capture);
 
         final ActionBar actionBar = getActionBar();
-        actionBar.setTitle("撮影");
+        getSupportActionBar().setTitle("撮影");
 
         // Show the Up button in the action bar.
 		getActionBar().setDisplayHomeAsUpEnabled(true);

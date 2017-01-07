@@ -22,7 +22,7 @@ public class KitakyushuWebsiteActivity extends ActionBarActivity {
         setContentView(R.layout.activity_kitakyushu_website);
         final android.app.ActionBar actionBar = getActionBar();
         String title =  getIntent().getStringExtra("KITAKYUSHU_TITLE") ;
-        actionBar.setTitle(title);
+        getSupportActionBar().setTitle(title);
 
         String url = getIntent().getStringExtra("KITAKYUSHU_LINK") ;
         webView = (WebView) findViewById(R.id.kitakyushu_webview);

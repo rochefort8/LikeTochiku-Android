@@ -30,7 +30,7 @@ public class PhotoRelayActivity extends ActionBarActivity implements OnClickList
 		setContentView(R.layout.activity_photo_relay);
 
         final ActionBar actionBar = getActionBar();
-        actionBar.setTitle("画用紙リレー");
+        getSupportActionBar().setTitle("画用紙リレー");
 		button1 = (ImageButton)findViewById(R.id.button_capture) ;
 		button1.setOnClickListener(this);     
 	}

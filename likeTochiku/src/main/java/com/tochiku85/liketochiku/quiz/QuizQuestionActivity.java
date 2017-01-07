@@ -42,7 +42,7 @@ public class QuizQuestionActivity extends ActionBarActivity implements OnClickLi
         setContentView(R.layout.activity_quiz_question);
 
         final android.app.ActionBar actionBar = getActionBar();
-        actionBar.setTitle("クイズ");
+        getSupportActionBar().setTitle("クイズ");
 
         setButton() ;
         ParseApplication parseApplication = (ParseApplication)this.getApplication();

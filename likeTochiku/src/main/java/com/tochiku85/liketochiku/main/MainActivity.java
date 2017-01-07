@@ -25,6 +25,7 @@ import android.support.v4.widget.SwipeRefreshLayout;
 import android.support.v7.app.ActionBarActivity;
 import android.content.Intent;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.Menu;
@@ -44,7 +45,7 @@ import java.util.Date;
 import java.util.Timer;
 import java.util.TimerTask;
 
-public class MainActivity extends ActionBarActivity implements OnClickListener,LikeTochikuContents.LikeTochikuContentsCallback {
+public class MainActivity extends AppCompatActivity implements OnClickListener,LikeTochikuContents.LikeTochikuContentsCallback {
 
 	Button button1, button2, button3, button4, button5, button6 ;
 	int requestCode ;
@@ -89,8 +90,9 @@ public class MainActivity extends ActionBarActivity implements OnClickListener,L
 		super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        final android.app.ActionBar actionBar = getActionBar();
-        actionBar.setTitle("ホーム");
+//        final android.app.ActionBar actionBar = getActionBar();
+//        getSupportActionBar().setTitle("ホーム");
+        getSupportActionBar().setTitle("ホーム");
 
         mCtx = this ;
         TextView textView = (TextView)findViewById(R.id.text_main_ad) ;

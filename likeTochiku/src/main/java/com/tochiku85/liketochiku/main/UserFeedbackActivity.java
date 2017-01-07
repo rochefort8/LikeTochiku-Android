@@ -39,7 +39,7 @@ public class UserFeedbackActivity extends ActionBarActivity implements View.OnCl
 
         mContext = this ;
         final android.app.ActionBar actionBar = getActionBar();
-        actionBar.setTitle("一言どうぞ！");
+        getSupportActionBar().setTitle("一言どうぞ！");
 
         buttonSubmit = (Button) findViewById(R.id.button_send_feedback);
         buttonSubmit.setOnClickListener(this);

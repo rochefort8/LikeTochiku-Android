@@ -38,7 +38,7 @@ public class LoginRequestPasswordActivity extends ActionBarActivity implements V
         mContext = this ;
 
         final android.app.ActionBar actionBar = getActionBar();
-        actionBar.setTitle("ユーザ登録用パスワード要求");
+        getSupportActionBar().setTitle("ユーザ登録用パスワード要求");
 
 
 

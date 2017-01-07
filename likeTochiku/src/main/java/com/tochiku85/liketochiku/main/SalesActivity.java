@@ -20,7 +20,7 @@ public class SalesActivity extends ActionBarActivity {
         setContentView(R.layout.activity_sales);
 
         final android.app.ActionBar actionBar = getActionBar();
-        actionBar.setTitle("記念品通販");
+        getSupportActionBar().setTitle("記念品通販");
 
         webView = (WebView) findViewById(R.id.sales_webview);
         webView.loadUrl("http://tokyo2015.tochiku.com/goods.html");

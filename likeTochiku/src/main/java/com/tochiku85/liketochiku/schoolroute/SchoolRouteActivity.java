@@ -51,7 +51,7 @@ public class SchoolRouteActivity extends ActionBarActivity implements LikeTochik
         mContext = this;
 
         final android.app.ActionBar actionBar = getActionBar();
-        actionBar.setTitle("通学路");
+        getSupportActionBar().setTitle("通学路");
 
         mContents = new SchoolRouteContents(this) ;
         mContents.setCallback(this);

@@ -38,7 +38,7 @@ public class TochikujiResultActivity extends ActionBarActivity implements OnClic
 		setContentView(R.layout.activity_tochikuji_result);
 
 		final android.app.ActionBar actionBar = getActionBar();
-		actionBar.setTitle("とーちくじ！");
+		getSupportActionBar().setTitle("とーちくじ！");
 
 		button1 = (Button)findViewById(R.id.button_tochikuji_back) ;
 		button1.setOnClickListener(this);

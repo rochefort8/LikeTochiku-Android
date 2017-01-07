@@ -48,7 +48,7 @@ public class KitakyushuActivity extends ActionBarActivity  implements LikeTochik
         mContext = this;
 
         final android.app.ActionBar actionBar = getActionBar();
-        actionBar.setTitle("いいね！東筑応援団");
+        getSupportActionBar().setTitle("いいね！東筑応援団");
 
         ParseApplication parseApplication = (ParseApplication)this.getApplication();
         mKitakyushuContents = parseApplication.getKitakyushuContents() ;

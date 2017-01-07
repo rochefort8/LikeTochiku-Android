@@ -49,7 +49,7 @@ public class QuizMainActivity extends ActionBarActivity implements OnClickListen
         setContentView(R.layout.activity_quiz_main);
 
         final android.app.ActionBar actionBar = getActionBar();
-        actionBar.setTitle("クイズ");
+        getSupportActionBar().setTitle("クイズ");
 
         button1 = (Button) findViewById(R.id.button_quiz_start);
         button1.setOnClickListener(this);

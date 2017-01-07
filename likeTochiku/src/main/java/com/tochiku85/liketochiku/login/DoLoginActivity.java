@@ -6,6 +6,7 @@ import android.content.Context;
 import android.content.Intent;
 import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
@@ -26,7 +27,7 @@ import com.tochiku85.liketochiku.main.MainActivity;
 import java.util.List;
 
 
-public class DoLoginActivity extends ActionBarActivity  implements View.OnClickListener {
+public class DoLoginActivity extends AppCompatActivity implements View.OnClickListener {
 
     Button button_do_login, button_password_forgotten;
     String mUserName;
@@ -42,8 +43,9 @@ public class DoLoginActivity extends ActionBarActivity  implements View.OnClickL
 
         mContext = this ;
 
-        final android.app.ActionBar actionBar = getActionBar();
-        actionBar.setTitle("ログイン");
+//        final android.app.ActionBar actionBar = getActionBar();
+//        getSupportActionBar().setTitle("ログイン");
+        getSupportActionBar().setTitle("ログイン");
 
         button_do_login = (Button) findViewById(R.id.button_do_login);
         button_do_login.setOnClickListener(this);

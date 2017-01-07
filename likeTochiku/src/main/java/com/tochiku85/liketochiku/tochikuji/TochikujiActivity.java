@@ -45,7 +45,7 @@ public class TochikujiActivity extends ActionBarActivity implements OnClickListe
 		playList = new ArrayList<Integer>() ;
 
 		final android.app.ActionBar actionBar = getActionBar();
-		actionBar.setTitle("とーちくじ！");
+		getSupportActionBar().setTitle("とーちくじ！");
 
         mTochikujiContents = new TochikujiContents(this) ;
         mTochikujiContents.setCallback(this);

@@ -24,6 +24,7 @@ package com.tochiku85.liketochiku.login;
 import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.view.View.OnClickListener;
 import android.widget.Button;
@@ -41,7 +42,7 @@ import java.util.Arrays;
  * Shows the user profile. This simple activity can function regardless of whether the user
  * is currently logged in.
  */
-public class LoginActivity extends Activity  implements OnClickListener {
+public class LoginActivity extends AppCompatActivity  implements OnClickListener {
     private static final int LOGIN_REQUEST = 0;
 
     Button button_enter_login, button_enter_registration;
@@ -51,8 +52,9 @@ public class LoginActivity extends Activity  implements OnClickListener {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
 
-        final android.app.ActionBar actionBar = getActionBar();
-        actionBar.setTitle("いいね！東筑");
+//        final android.app.ActionBar actionBar = getActionBar();
+//        final android.app.ActionBar actionBar =
+        getSupportActionBar().setTitle("いいね！東筑");
 
         button_enter_login = (Button) findViewById(R.id.button_enter_login);
         button_enter_login.setOnClickListener(this);

@@ -34,7 +34,7 @@ public class NewsDetailActivity extends ActionBarActivity implements View.OnClic
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_news_detail);
         final android.app.ActionBar actionBar = getActionBar();
-        actionBar.setTitle("ニュース");
+        getSupportActionBar().setTitle("ニュース");
 
         String title = getIntent().getStringExtra("NEWS_TITLE") ;
         String article = getIntent().getStringExtra("NEWS_ARTICLE") ;

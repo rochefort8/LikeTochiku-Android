@@ -41,7 +41,7 @@ public class ReunionRegistrationActivity extends ActionBarActivity implements Vi
 
         mContext = this ;
         final android.app.ActionBar actionBar = getActionBar();
-        actionBar.setTitle("懇親会申し込み");
+        getSupportActionBar().setTitle("懇親会申し込み");
 
         buttonSubmit = (Button) findViewById(R.id.button_registration_submit);
         buttonSubmit.setOnClickListener(this);

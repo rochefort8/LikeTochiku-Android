@@ -30,7 +30,7 @@ public class LoginPasswordActivity extends ActionBarActivity implements View.OnC
         setContentView(R.layout.activity_login_password);
 
         final android.app.ActionBar actionBar = getActionBar();
-        actionBar.setTitle("ユーザ登録パスワード");
+        getSupportActionBar().setTitle("ユーザ登録パスワード");
 
 
         button_enter_password = (Button) findViewById(R.id.button_enter_password);

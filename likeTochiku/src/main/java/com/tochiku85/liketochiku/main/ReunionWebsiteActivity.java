@@ -29,7 +29,7 @@ public class ReunionWebsiteActivity extends ActionBarActivity {
             url = _url ;
         }
         final android.app.ActionBar actionBar = getActionBar();
-        actionBar.setTitle(title);
+        getSupportActionBar().setTitle(title);
 
         webView = (WebView) findViewById(R.id.reunion_webview);
         webView.loadUrl(url);

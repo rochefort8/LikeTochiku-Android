@@ -79,7 +79,7 @@ public class NewsActivity extends ActionBarActivity  implements LikeTochikuConte
 		mContext = this;
 
         final android.app.ActionBar actionBar = getActionBar();
-        actionBar.setTitle("ニュース");
+        getSupportActionBar().setTitle("ニュース");
 
         mNewsContents = new NewsContents(this) ;
         mNewsContents.setCallback(this);

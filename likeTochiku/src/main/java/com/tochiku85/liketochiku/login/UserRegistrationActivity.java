@@ -35,7 +35,7 @@ public class UserRegistrationActivity extends ActionBarActivity implements View.
         mContext = this ;
 
         final android.app.ActionBar actionBar = getActionBar();
-        actionBar.setTitle("ユーザ登録");
+        getSupportActionBar().setTitle("ユーザ登録");
 
         button_registration = (Button) findViewById(R.id.button_registration);
         button_registration.setOnClickListener(this);

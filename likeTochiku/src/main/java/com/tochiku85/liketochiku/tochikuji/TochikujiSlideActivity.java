@@ -14,6 +14,7 @@ import android.graphics.BitmapFactory;
 import android.media.MediaPlayer;
 import android.os.Bundle;
 import android.os.Handler;
+import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
 import android.view.GestureDetector;
 import android.view.MotionEvent;
@@ -25,7 +26,7 @@ import android.view.animation.Animation.AnimationListener;
 import android.widget.ImageView;
 import android.widget.ViewFlipper;
 
-public class TochikujiSlideActivity extends Activity {
+public class TochikujiSlideActivity extends AppCompatActivity {
 
 
 	private static final int SWIPE_MIN_DISTANCE = 120;
@@ -61,7 +62,7 @@ public class TochikujiSlideActivity extends Activity {
 		setContentView(R.layout.activity_tochikuji_slide);
 
 		final android.app.ActionBar actionBar = getActionBar();
-		actionBar.setTitle("画面をタップしてね！");
+		getSupportActionBar().setTitle("画面をタップしてね！");
 
 		mp = MediaPlayer.create(this,R.raw.tochikuji);
 		mp.start();

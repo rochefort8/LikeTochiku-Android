@@ -24,7 +24,7 @@ public class HomeMessageActivity extends ActionBarActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_home_message);
         final android.app.ActionBar actionBar = getActionBar();
-        actionBar.setTitle("当番期より");
+        getSupportActionBar().setTitle("当番期より");
 
         parseApplication = (ParseApplication)this.getApplication();
         mMessageContents = parseApplication.getMessageContents() ;
