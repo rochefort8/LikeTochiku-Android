@@ -16,6 +16,9 @@
     <style name="AppTheme" parent="AppBaseTheme">
         <!-- All customizations that are NOT specific to a particular API-level can go here. -->
         <item name="android:actionBarStyle">@style/actionBar</item>
+
+        <!-- Supported library compatibility -->
+        <item name="actionBarStyle">@style/actionBar</item>
     </style>
 
     <style name="ImageTitle">
@@ -39,9 +42,12 @@
         <item name="android:gravity">center</item>        
     </style>
     <style name="actionBar" parent="Widget.AppCompat.ActionBar">
-
         <item name="android:background">@color/tochiku_image</item>
         <item name="android:titleTextStyle">@style/titleTextStyle</item>
+
+        <!-- Supported library compatibility -->
+        <item name="background">@color/tochiku_image</item>
+        <item name="titleTextStyle">@style/titleTextStyle</item>
     </style>
     <style name="titleTextStyle" parent="TextAppearance.AppCompat.Widget.ActionBar.Title">
         <item name="android:textColor">#FFFFFF</item>
