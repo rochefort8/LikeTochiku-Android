@@ -33,14 +33,14 @@
 
             <TextView
                 android:id="@+id/text_date"
-                android:layout_width="306dp"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_alignParentTop="true"
                 android:layout_centerHorizontal="true"
                 android:layout_gravity="center_horizontal"
-                android:text="2016年度東京東筑会懇親会"
-                android:textAlignment="center"
-                android:textSize="24dp" />
+                android:text="東京東筑会懇親会"
+                android:textSize="24dp"
+                android:textAlignment="center" />
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -63,15 +63,16 @@
                         android:layout_width="245dp"
                         android:layout_height="wrap_content"
                         android:layout_gravity="center_horizontal"
-                        android:text="10月29日 土曜日\n「とうちく」の日！"
-                        android:textSize="20dp" />
+                        android:text="2017年度懇親会もぜひご参加ください！"
+                        android:textSize="20dp"
+                        android:textAlignment="center" />
 
                     <TextView
                         android:id="@+id/textView8"
-                        android:layout_width="273dp"
+                        android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_gravity="center_horizontal"
-                        android:text="TKPガーデンシティ品川にて"
+                        android:text="開催要項は追ってお知らせ！"
                         android:textSize="20dp" />
                 </LinearLayout>
 
